@@ -51,7 +51,7 @@ if section == "General":
     """, unsafe_allow_html=True)
     st.image("Images/diffimg.png", 
              caption="Languages Benchmarked", 
-             use_container_width=True)
+             use_column_width=True)
 
 if section == "Introduction":
     st.markdown("""
@@ -3720,6 +3720,7 @@ if section == "Conclusion":
 st.markdown(section_content[section] if section_content[section] else "")
 
 st.sidebar.write("Developed by Michael Fernandes")
+
 
 
 
