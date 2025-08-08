@@ -49,9 +49,8 @@ if section == "General":
         <strong>Profilers Used:</strong> cPython, VirtualVM, Valgrind, gprof,pprof
     </p>
     """, unsafe_allow_html=True)
-    st.image("Images/diffimg.png", 
-             caption="Languages Benchmarked", 
-             use_column_width=True)
+    st.image("Images/diffimg.jpg", caption="Languages Benchmarked", use_container_width=True)
+
 
 if section == "Introduction":
     st.markdown("""
@@ -3720,6 +3719,7 @@ if section == "Conclusion":
 st.markdown(section_content[section] if section_content[section] else "")
 
 st.sidebar.write("Developed by Michael Fernandes")
+
 
 
 
