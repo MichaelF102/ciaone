@@ -1,0 +1,44 @@
+desc: (none)
+cmd: ./benchmark_profile
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=354143032
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1181146464
+mem_heap_B=1024
+mem_heap_extra_B=8
+mem_stacks_B=0
+heap_tree=peak
+n1: 1024 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 1024 0x48DB1B4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x48EB523: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x48E8F8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x48E9AAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x48E9AAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x48DDC5C: puts (ioputs.c:40)
+       n1: 1024 0x10919E: printOddNumbers (profc.c:9)
+        n0: 1024 0x109288: main (profc.c:32)
+#-----------
+snapshot=3
+#-----------
+time=1181146464
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty

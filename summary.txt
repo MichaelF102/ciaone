@@ -1,0 +1,393 @@
+Title: Java Performance Profiling Report: Fibonacci, Odd Numbers, N-Body Simulation, and Deep Recursion
+
+1. Introduction
+This report summarizes the performance profiling of three key computational workloads implemented in Java:
+
+Computation of 1 million odd numbers and Fibonacci terms
+
+N-body gravitational simulation
+
+Deep recursion testing with and without tail-call optimization
+
+The Java programs were executed on a Windows system using the java.lang.management package for internal profiling, and VisualVM 2.2 for external analysis (CPU, memory, threads, GC, and class loading).
+
+2. Methodology
+Each program was benchmarked with standard configurations. The key metrics observed were:
+
+Execution Time (wall time and CPU time)
+
+Memory Usage (used heap, peak heap)
+
+Thread Activity (live, peak, daemon threads)
+
+Garbage Collection Behavior (frequency and duration)
+
+Loaded Classes (baseline + changes)
+
+Toolchain:
+
+VisualVM 2.2 (with Sampler, Threads, Heap monitor)
+
+Java 17 JVM
+
+Command-line invocation with profiling hooks
+
+Programs Tested:
+
+Fibonacci + Odd Numbers (1M)
+
+Single-threaded workload with concurrency
+
+Uses arrays and loops
+
+N-Body Simulation
+
+Simulates gravitational interaction between multiple bodies
+
+Both parallel and serial configurations tested
+
+Steps: 100 and 500; Bodies: 100, 200, 500
+
+Deep Recursion
+
+Evaluates recursion limits with and without tail call optimization
+
+StackOverflowError expected on exceeding limit
+
+Tail-recursion manually simulated (note: Java doesn't optimize tail calls)
+
+3. Results Summary
+
+A. Fibonacci + Odd Numbers
+
+Execution Time: 8.35 ms
+
+CPU Time (Main): 15.625 ms
+
+Memory Used: 1529 KB
+
+Peak Heap: 0.71 MB
+
+Threads Used: 7
+
+GC: Handled automatically by JVM (1 old gen collection, 3 ms total)
+
+Classes Loaded: 1025
+
+B. N-Body Simulation
+
+Execution Time (for 100 bodies, 500 steps, parallel): 0.031 s
+
+Memory Used: 9MB to 23MB depending on body count
+
+Threads: Up to 19 for parallel execution
+
+Observed that parallel runs reduced execution time by ~30% for larger body counts
+
+GC activity remained negligible during runs
+
+C. Deep Recursion
+
+Max Depth (non-tail): 20000
+
+Max Depth (tail-mode): 20000
+
+Memory Used: 3MB constant
+
+Threads: 7 (stable)
+
+Exception: StackOverflowError occurs consistently at 20k depth in both modes
+
+VisualVM Observations:
+
+Heap Usage: Stable sawtooth pattern, healthy GC cycles
+
+Thread Charts: Spike during parallel execution in N-body
+
+CPU: Low sustained usage (<1%) for recursion and odd/Fibonacci; slightly higher during simulation
+
+Classes: Roughly ~8126 classes total, with ~1300 shared loaded
+
+4. Discussion of Trade-offs
+
+Performance vs. Development Time:
+
+Java offers an excellent balance. While not as fast as C++, it's significantly faster than Python, especially after JVM warm-up. It also offers faster development than C++ due to built-in GC, safety, and type checking.
+
+Reliability vs. Control:
+
+Java abstracts memory management and safety (GC), reducing risk of leaks or UB. However, C++ allows full control and micro-optimization where needed.
+
+Memory Efficiency:
+
+Java incurs more memory overhead than C/C++ due to JVM object model and GC bookkeeping, but amortized well in large systems.
+
+Threading & Concurrency:
+
+Java's threading model is powerful and scales well, especially in simulations like N-body.
+
+Profiling and Debugging:
+
+VisualVM provides a professional, GUI-driven profiling tool. It's easier and more accessible compared to tools like Valgrind for C++.
+
+5. Threats to Validity
+
+Non-uniform workloads: Depths and counts are not constant across programs.
+
+JIT effects: Single short runs might not reflect warmed-up performance.
+
+Profiler Overhead: VisualVM adds minimal overhead, but it's still present.
+
+Platform Variability: Results may differ slightly on macOS/Linux or with a different scheduler.
+
+GC and Heap Observations: JVM heap metrics exclude native memory; actual memory footprint could be higher.
+
+6. Conclusion
+Java delivers a good compromise between speed, safety, and productivity. In the tested tasks:
+
+It handled concurrency well
+
+Maintained stable memory and thread usage
+
+Executed up to moderate depths in recursion safely
+
+Simulated physics tasks effectively, with multithreading benefits
+
+Compared to Python, Java is clearly faster and more memory-stable. Against C++, it lags in raw performance but offers significantly easier profiling and fewer crash risks. VisualVM proves to be a powerful tool for understanding Java behavior in real-world simulations and recursive workloads.
+
+-------------------------------------Python------------------------------
+
+Comprehensive Report on Python Performance: Fibonacci, N-Body Simulation, and Deep Recursion Benchmarks
+
+1. Introduction
+
+Performance benchmarking in Python is crucial to evaluate the trade-offs between execution time, memory usage, and runtime safety across different types of workloads. In this study, we benchmarked three distinct algorithmic problems:
+
+Fibonacci and Odd Numbers (Up to 10 Million): CPU-bound, deterministic computation
+
+N-body Simulation: Physics-based simulation with floating-point arithmetic, loops, and force calculations
+
+Deep Recursion (Factorial): Memory-heavy recursive function with long integer manipulation
+
+We employed built-in tools including cProfile, tracemalloc, memory_profiler, and threading for concurrency analysis.
+
+2. Methodology
+
+Tools Used:
+
+cProfile: Measures cumulative function call time
+
+tracemalloc: Captures current and peak memory usage
+
+memory_profiler: Profile line-by-line memory usage (via decorators)
+
+threading: Used in Fibonacci and Odd task to evaluate concurrency
+
+Programs Benchmarked:
+
+Fibonacci + Odd Numbers up to 10 million
+
+Implemented iteratively
+
+Used two threads
+
+Time and memory usage logged
+
+N-body Simulation
+
+Simulated gravitational interactions between N bodies over T timesteps
+
+Multiple runs:
+
+50 bodies, 100 steps
+
+100 bodies, 100 steps
+
+200 bodies, 50 steps
+
+300 bodies, 20 steps
+
+Deep Recursion (Factorial)
+
+Recursive factorial calculations for n = 500, 1000, 2000
+
+Memory and time usage analyzed
+
+3. Results
+
+Program
+
+Execution Time
+
+Peak Memory Usage
+
+GC Overhead
+
+Threads Used
+
+Loop Limit Passed
+
+Fibonacci + Odd (1M)
+
+15.24 s
+
+0.29 MB
+
+Low
+
+2
+
+Yes (10M)
+
+N-body (50b, 100s)
+
+1.54 s
+
+50.86 MB
+
+Moderate
+
+1
+
+Yes
+
+N-body (100b, 100s)
+
+1.44 s
+
+50.92 MB
+
+Moderate
+
+1
+
+Yes
+
+N-body (200b, 50s)
+
+2.15 s
+
+51.12 MB
+
+Moderate
+
+1
+
+Yes
+
+N-body (300b, 20s)
+
+2.13 s
+
+51.02 MB
+
+Moderate
+
+1
+
+Yes
+
+Factorial (500)
+
+4.31 s
+
+50.80 MB
+
+Negligible
+
+1
+
+Yes
+
+Factorial (1000)
+
+2.74 s
+
+51.09 MB
+
+Negligible
+
+1
+
+Yes
+
+Factorial (2000)
+
+2.50 s
+
+51.38 MB
+
+Negligible
+
+1
+
+Failed (Overflow)
+
+4. Discussion of Trade-offs
+
+Performance vs. Dev Time:
+
+Python delivered high dev productivity: <50 lines of code for each program.
+
+Performance, however, is lower compared to compiled counterparts (C/C++).
+
+Concurrency:
+
+Threads ran successfully for CPU-bound tasks.
+
+Due to GIL, true parallelism is not achieved, but responsiveness improves slightly.
+
+Memory Usage:
+
+Tracemalloc reports very low Python-side memory usage for iterative tasks.
+
+Recursive factorial had high peak memory due to string construction and result representation.
+
+Control vs. Reliability:
+
+Python provides safe execution (no manual memory, segmentation faults).
+
+The cost is reduced control over performance optimizations.
+
+5. Threats to Validity
+
+Non-uniform workloads: Different loop counts and logic depth affect consistency across tests.
+
+Interpreter and Profiler Overhead: tracemalloc, cProfile add minor latency overheads.
+
+Python Memory Semantics: tracemalloc measures Python object memory; system RSS might be higher.
+
+Threading Model: GIL limits multithreaded CPU performance measurement.
+
+Hardware Influence: All tests run on Windows 10 (WSL for C/C++), may vary on native Linux/Mac.
+
+No multiprocessing Used: GIL workaround (via process parallelism) not tested.
+
+6. Conclusion
+
+Python excels in developer experience, readability, and safety. For small to moderate computational loads and memory usage, it performs reasonably well. However, performance degrades quickly with heavy math and recursion beyond safe interpreter limits (as seen with factorial(2000)). For computational physics (N-body), Python is acceptable for low-to-mid-scale simulations but cannot scale without compiled accelerators or external libraries (e.g., NumPy, Numba).
+
+7. Recommendations
+
+Use Python for rapid prototyping and safe logic.
+
+Offload compute-intensive routines to C/C++ via FFI or Cython.
+
+For large-scale simulations: adopt Numba, multiprocessing, or migrate to Rust/C++.
+
+Appendix: Profiling Tools
+
+cProfile: Function call times
+
+tracemalloc: Memory snapshot diff
+
+memory_profiler: Per-line memory usage (used for factorial)
+
+time module: Wall time for global execution
+
+gc.get_count(): Check GC collections before and after
+
+Threading for concurrency simulation in IO-bound portions
+
+------------------c++-----------------------------------
+

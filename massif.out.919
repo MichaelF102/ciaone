@@ -1,0 +1,646 @@
+desc: (none)
+cmd: ./nbody_sim
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1898413
+mem_heap_B=8
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=1903540
+mem_heap_B=104
+mem_heap_extra_B=24
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2005812
+mem_heap_B=73832
+mem_heap_extra_B=32
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2007395
+mem_heap_B=73844
+mem_heap_extra_B=44
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2007484
+mem_heap_B=73852
+mem_heap_extra_B=60
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=2011427
+mem_heap_B=74876
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=2020310
+mem_heap_B=82076
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=40068379
+mem_heap_B=82076
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=detailed
+n4: 82076 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 7200 0x109803: allocate (new_allocator.h:151)
+  n1: 7200 0x109803: allocate (alloc_traits.h:482)
+   n1: 7200 0x109803: _M_allocate (stl_vector.h:381)
+    n1: 7200 0x109803: _M_allocate (stl_vector.h:378)
+     n1: 7200 0x109803: _M_create_storage (stl_vector.h:398)
+      n1: 7200 0x109803: _Vector_base (stl_vector.h:335)
+       n1: 7200 0x109803: vector (stl_vector.h:557)
+        n1: 7200 0x109803: simulate(int, int, double, bool) (nbodycpp.cpp:61)
+         n0: 7200 0x10944D: main (nbodycpp.cpp:118)
+ n1: 1024 0x4BE01B4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4BF0523: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4BEDF8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4BEEAAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4BEEAAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4BE1A11: fwrite (iofwrite.c:39)
+       n1: 1024 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n1: 1024 0x49AE13B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+         n0: 1024 0x1093A7: main (nbodycpp.cpp:108)
+ n0: 124 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=40068379
+mem_heap_B=74876
+mem_heap_extra_B=68
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=40068455
+mem_heap_B=82076
+mem_heap_extra_B=76
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=40091397
+mem_heap_B=82268
+mem_heap_extra_B=84
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=40093508
+mem_heap_B=86396
+mem_heap_extra_B=156
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=40094649
+mem_heap_B=86500
+mem_heap_extra_B=172
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=40096172
+mem_heap_B=86820
+mem_heap_extra_B=180
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=15
+#-----------
+time=40195358
+mem_heap_B=87140
+mem_heap_extra_B=188
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=40396991
+mem_heap_B=87460
+mem_heap_extra_B=196
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=40425276
+mem_heap_B=87780
+mem_heap_extra_B=204
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=18
+#-----------
+time=40426360
+mem_heap_B=88100
+mem_heap_extra_B=212
+mem_stacks_B=0
+heap_tree=detailed
+n6: 88100 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 7200 0x109803: allocate (new_allocator.h:151)
+  n1: 7200 0x109803: allocate (alloc_traits.h:482)
+   n1: 7200 0x109803: _M_allocate (stl_vector.h:381)
+    n1: 7200 0x109803: _M_allocate (stl_vector.h:378)
+     n1: 7200 0x109803: _M_create_storage (stl_vector.h:398)
+      n1: 7200 0x109803: _Vector_base (stl_vector.h:335)
+       n1: 7200 0x109803: vector (stl_vector.h:557)
+        n2: 7200 0x109803: simulate(int, int, double, bool) (nbodycpp.cpp:61)
+         n0: 7200 0x109464: main (nbodycpp.cpp:120)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4128 0x4AE3550: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 4128 0x4AF7822: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 4128 0x4AED95A: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 4128 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 4128 0x109464: main (nbodycpp.cpp:120)
+ n1: 1600 0x40145AB: calloc (rtld-malloc.h:44)
+  n1: 1600 0x40145AB: allocate_dtv (dl-tls.c:370)
+   n1: 1600 0x40145AB: _dl_allocate_tls (dl-tls.c:629)
+    n1: 1600 0x4BF8616: allocate_stack (allocatestack.c:429)
+     n1: 1600 0x4BF8616: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+      n1: 1600 0x4AF7E1E: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+       n1: 1600 0x4AED971: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+        n1: 1600 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+         n0: 1600 0x109464: main (nbodycpp.cpp:120)
+ n1: 1024 0x4BE01B4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4BF0523: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4BEDF8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4BEEAAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4BEEAAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4BE1A11: fwrite (iofwrite.c:39)
+       n1: 1024 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n1: 1024 0x49AE13B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+         n0: 1024 0x1093A7: main (nbodycpp.cpp:108)
+ n0: 420 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=40427444
+mem_heap_B=88420
+mem_heap_extra_B=220
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=40428528
+mem_heap_B=88740
+mem_heap_extra_B=228
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=40533131
+mem_heap_B=89060
+mem_heap_extra_B=236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=40534215
+mem_heap_B=89380
+mem_heap_extra_B=244
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=40535299
+mem_heap_B=89700
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=40536383
+mem_heap_B=90020
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=252082396
+mem_heap_B=90020
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=detailed
+n6: 90020 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 7200 0x109803: allocate (new_allocator.h:151)
+  n1: 7200 0x109803: allocate (alloc_traits.h:482)
+   n1: 7200 0x109803: _M_allocate (stl_vector.h:381)
+    n1: 7200 0x109803: _M_allocate (stl_vector.h:378)
+     n1: 7200 0x109803: _M_create_storage (stl_vector.h:398)
+      n1: 7200 0x109803: _Vector_base (stl_vector.h:335)
+       n1: 7200 0x109803: vector (stl_vector.h:557)
+        n2: 7200 0x109803: simulate(int, int, double, bool) (nbodycpp.cpp:61)
+         n0: 7200 0x109464: main (nbodycpp.cpp:120)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4128 0x4AE3550: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 4128 0x4AF7822: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 4128 0x4AED95A: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 4128 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 4128 0x109464: main (nbodycpp.cpp:120)
+ n1: 3520 0x40145AB: calloc (rtld-malloc.h:44)
+  n1: 3520 0x40145AB: allocate_dtv (dl-tls.c:370)
+   n1: 3520 0x40145AB: _dl_allocate_tls (dl-tls.c:629)
+    n1: 3520 0x4BF8616: allocate_stack (allocatestack.c:429)
+     n1: 3520 0x4BF8616: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+      n1: 3520 0x4AF7E1E: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+       n1: 3520 0x4AED971: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+        n1: 3520 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+         n0: 3520 0x109464: main (nbodycpp.cpp:120)
+ n1: 1024 0x4BE01B4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4BF0523: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4BEDF8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4BEEAAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4BEEAAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4BE1A11: fwrite (iofwrite.c:39)
+       n1: 1024 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n1: 1024 0x49AE13B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+         n0: 1024 0x1093A7: main (nbodycpp.cpp:108)
+ n0: 420 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=26
+#-----------
+time=252082396
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=252145395
+mem_heap_B=90020
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=328196491
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=328196567
+mem_heap_B=90020
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=755063885
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=755170134
+mem_heap_B=97220
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=907241828
+mem_heap_B=97220
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=detailed
+n6: 97220 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 14400 0x109803: allocate (new_allocator.h:151)
+  n1: 14400 0x109803: allocate (alloc_traits.h:482)
+   n1: 14400 0x109803: _M_allocate (stl_vector.h:381)
+    n1: 14400 0x109803: _M_allocate (stl_vector.h:378)
+     n1: 14400 0x109803: _M_create_storage (stl_vector.h:398)
+      n1: 14400 0x109803: _Vector_base (stl_vector.h:335)
+       n1: 14400 0x109803: vector (stl_vector.h:557)
+        n2: 14400 0x109803: simulate(int, int, double, bool) (nbodycpp.cpp:61)
+         n0: 14400 0x10944D: main (nbodycpp.cpp:118)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4128 0x4AE3550: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 4128 0x4AF7822: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 4128 0x4AED95A: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 4128 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 4128 0x109464: main (nbodycpp.cpp:120)
+ n1: 3520 0x40145AB: calloc (rtld-malloc.h:44)
+  n1: 3520 0x40145AB: allocate_dtv (dl-tls.c:370)
+   n1: 3520 0x40145AB: _dl_allocate_tls (dl-tls.c:629)
+    n1: 3520 0x4BF8616: allocate_stack (allocatestack.c:429)
+     n1: 3520 0x4BF8616: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+      n1: 3520 0x4AF7E1E: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+       n1: 3520 0x4AED971: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+        n1: 3520 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+         n0: 3520 0x109464: main (nbodycpp.cpp:120)
+ n1: 1024 0x4BE01B4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4BF0523: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4BEDF8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4BEEAAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4BEEAAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4BE1A11: fwrite (iofwrite.c:39)
+       n1: 1024 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n1: 1024 0x49AE13B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+         n0: 1024 0x1093A7: main (nbodycpp.cpp:108)
+ n0: 420 in 4 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=33
+#-----------
+time=907241828
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=907241904
+mem_heap_B=97220
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=1244163215
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=1244164859
+mem_heap_B=97220
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=1548423319
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=1548423395
+mem_heap_B=97220
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=2402552069
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=2402552618
+mem_heap_B=118820
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=3352721009
+mem_heap_B=118820
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=peak
+n5: 118820 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 36000 0x109803: allocate (new_allocator.h:151)
+  n1: 36000 0x109803: allocate (alloc_traits.h:482)
+   n1: 36000 0x109803: _M_allocate (stl_vector.h:381)
+    n1: 36000 0x109803: _M_allocate (stl_vector.h:378)
+     n1: 36000 0x109803: _M_create_storage (stl_vector.h:398)
+      n1: 36000 0x109803: _Vector_base (stl_vector.h:335)
+       n1: 36000 0x109803: vector (stl_vector.h:557)
+        n2: 36000 0x109803: simulate(int, int, double, bool) (nbodycpp.cpp:61)
+         n0: 36000 0x10944D: main (nbodycpp.cpp:118)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 4128 0x4AE3550: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 4128 0x4AF7822: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 4128 0x4AED95A: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 4128 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 4128 0x109464: main (nbodycpp.cpp:120)
+ n1: 3520 0x40145AB: calloc (rtld-malloc.h:44)
+  n1: 3520 0x40145AB: allocate_dtv (dl-tls.c:370)
+   n1: 3520 0x40145AB: _dl_allocate_tls (dl-tls.c:629)
+    n1: 3520 0x4BF8616: allocate_stack (allocatestack.c:429)
+     n1: 3520 0x4BF8616: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+      n1: 3520 0x4AF7E1E: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+       n1: 3520 0x4AED971: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+        n1: 3520 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+         n0: 3520 0x109464: main (nbodycpp.cpp:120)
+ n0: 1444 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=3352721009
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=3352721085
+mem_heap_B=118820
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=4818460089
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=4818532601
+mem_heap_B=118820
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=6722326523
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=6722326599
+mem_heap_B=118820
+mem_heap_extra_B=260
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=9228339965
+mem_heap_B=82820
+mem_heap_extra_B=252
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=9228340499
+mem_heap_B=82812
+mem_heap_extra_B=236
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=9228340557
+mem_heap_B=82800
+mem_heap_extra_B=224
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=9228354582
+mem_heap_B=9072
+mem_heap_extra_B=216
+mem_stacks_B=0
+heap_tree=detailed
+n7: 9072 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 4128 0x4AE3550: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 4128 0x4AF7822: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 4128 0x4AED95A: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 4128 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 4128 0x109464: main (nbodycpp.cpp:120)
+ n1: 3520 0x40145AB: calloc (rtld-malloc.h:44)
+  n1: 3520 0x40145AB: allocate_dtv (dl-tls.c:370)
+   n1: 3520 0x40145AB: _dl_allocate_tls (dl-tls.c:629)
+    n1: 3520 0x4BF8616: allocate_stack (allocatestack.c:429)
+     n1: 3520 0x4BF8616: pthread_create@@GLIBC_2.34 (pthread_create.c:655)
+      n1: 3520 0x4AF7E1E: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+       n1: 3520 0x4AED971: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+        n1: 3520 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+         n0: 3520 0x109464: main (nbodycpp.cpp:120)
+ n1: 1024 0x4BE01B4: _IO_file_doallocate (filedoalloc.c:101)
+  n1: 1024 0x4BF0523: _IO_doallocbuf (genops.c:347)
+   n1: 1024 0x4BEDF8F: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:745)
+    n1: 1024 0x4BEEAAE: _IO_new_file_xsputn (fileops.c:1244)
+     n1: 1024 0x4BEEAAE: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1197)
+      n1: 1024 0x4BE1A11: fwrite (iofwrite.c:39)
+       n1: 1024 0x49ADDC3: std::basic_ostream<char, std::char_traits<char> >& std::__ostream_insert<char, std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*, long) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+        n1: 1024 0x49AE13B: std::basic_ostream<char, std::char_traits<char> >& std::operator<< <std::char_traits<char> >(std::basic_ostream<char, std::char_traits<char> >&, char const*) (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+         n0: 1024 0x1093A7: main (nbodycpp.cpp:108)
+ n2: 200 0x4AE34A4: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 192 0x4AF79A3: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 192 0x4AED95A: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 192 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 192 0x109464: main (nbodycpp.cpp:120)
+  n0: 8 in 1 place, below massif's threshold (1.00%)
+ n1: 104 0x4AE3514: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 104 0x4AF8A09: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 104 0x4AED971: GOMP_parallel (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 104 0x10992A: simulate(int, int, double, bool) (nbodycpp.cpp:72)
+     n0: 104 0x109464: main (nbodycpp.cpp:120)
+ n1: 96 0x4AE34DC: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+  n1: 96 0x4AE1BA0: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+   n1: 96 0x4AE1C77: ??? (in /usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0)
+    n1: 96 0x400571E: call_init.part.0 (dl-init.c:74)
+     n1: 96 0x4005823: call_init (dl-init.c:120)
+      n1: 96 0x4005823: _dl_init (dl-init.c:121)
+       n0: 96 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 0 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=52
+#-----------
+time=9228355830
+mem_heap_B=8048
+mem_heap_extra_B=208
+mem_stacks_B=0
+heap_tree=empty

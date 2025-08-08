@@ -1,0 +1,853 @@
+desc: (none)
+cmd: ./deeprcpp
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=1900496
+mem_heap_B=8
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=2090600
+mem_heap_B=79632
+mem_heap_extra_B=848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=2324626
+mem_heap_B=98832
+mem_heap_extra_B=4048
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=2478632
+mem_heap_B=87139
+mem_heap_extra_B=2117
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=5
+#-----------
+time=2713208
+mem_heap_B=113635
+mem_heap_extra_B=6533
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=3014279
+mem_heap_B=85219
+mem_heap_extra_B=1797
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=7
+#-----------
+time=3252415
+mem_heap_B=112339
+mem_heap_extra_B=6317
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=8
+#-----------
+time=3453639
+mem_heap_B=133603
+mem_heap_extra_B=9861
+mem_stacks_B=0
+heap_tree=detailed
+n3: 133603 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 58704 0x109A85: allocate (new_allocator.h:151)
+  n1: 58704 0x109A85: allocate (alloc_traits.h:482)
+   n1: 58704 0x109A85: _M_get_node (stl_tree.h:563)
+    n1: 58704 0x109A85: _M_create_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:613)
+     n1: 58704 0x109A85: _Auto_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:1637)
+      n1: 58704 0x109A85: std::_Rb_tree_iterator<std::pair<int const, long long> > std::_Rb_tree<int, std::pair<int const, long long>, std::_Select1st<std::pair<int const, long long> >, std::less<int>, std::allocator<std::pair<int const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<int const, long long> >, std::piecewise_construct_t const&, std::tuple<int const&>&&, std::tuple<>&&) [clone .isra.0] (stl_tree.h:2462)
+       n1: 58704 0x109FA3: operator[] (stl_map.h:513)
+        n2: 58704 0x109FA3: memoized_factorial(int) (deeprcpp.cpp:36)
+         n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+          n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+           n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+            n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+             n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+              n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+               n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                 n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                  n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                   n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                    n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                     n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                      n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                       n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                        n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                         n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                          n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                           n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                            n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                             n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                              n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                               n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                 n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                  n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                   n2: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 58704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                                n0: 0 in 1 place, below massif's threshold (1.00%)
+                               n0: 0 in 1 place, below massif's threshold (1.00%)
+                              n0: 0 in 1 place, below massif's threshold (1.00%)
+                             n0: 0 in 1 place, below massif's threshold (1.00%)
+                            n0: 0 in 1 place, below massif's threshold (1.00%)
+                           n0: 0 in 1 place, below massif's threshold (1.00%)
+                          n0: 0 in 1 place, below massif's threshold (1.00%)
+                         n0: 0 in 1 place, below massif's threshold (1.00%)
+                        n0: 0 in 1 place, below massif's threshold (1.00%)
+                       n0: 0 in 1 place, below massif's threshold (1.00%)
+                      n0: 0 in 1 place, below massif's threshold (1.00%)
+                     n0: 0 in 1 place, below massif's threshold (1.00%)
+                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                n0: 0 in 1 place, below massif's threshold (1.00%)
+               n0: 0 in 1 place, below massif's threshold (1.00%)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1171 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=9
+#-----------
+time=3739086
+mem_heap_B=162835
+mem_heap_extra_B=14733
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=10
+#-----------
+time=3886064
+mem_heap_B=170784
+mem_heap_extra_B=16040
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=4111163
+mem_heap_B=74947
+mem_heap_extra_B=85
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=4271529
+mem_heap_B=95347
+mem_heap_extra_B=3485
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=13
+#-----------
+time=4542612
+mem_heap_B=125011
+mem_heap_extra_B=8429
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=14
+#-----------
+time=4730607
+mem_heap_B=144547
+mem_heap_extra_B=11685
+mem_stacks_B=0
+heap_tree=detailed
+n3: 144547 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n1: 69648 0x109A85: allocate (new_allocator.h:151)
+  n1: 69648 0x109A85: allocate (alloc_traits.h:482)
+   n1: 69648 0x109A85: _M_get_node (stl_tree.h:563)
+    n1: 69648 0x109A85: _M_create_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:613)
+     n1: 69648 0x109A85: _Auto_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:1637)
+      n1: 69648 0x109A85: std::_Rb_tree_iterator<std::pair<int const, long long> > std::_Rb_tree<int, std::pair<int const, long long>, std::_Select1st<std::pair<int const, long long> >, std::less<int>, std::allocator<std::pair<int const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<int const, long long> >, std::piecewise_construct_t const&, std::tuple<int const&>&&, std::tuple<>&&) [clone .isra.0] (stl_tree.h:2462)
+       n1: 69648 0x109FA3: operator[] (stl_map.h:513)
+        n2: 69648 0x109FA3: memoized_factorial(int) (deeprcpp.cpp:36)
+         n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+          n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+           n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+            n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+             n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+              n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+               n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                 n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                  n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                   n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                    n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                     n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                      n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                       n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                        n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                         n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                          n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                           n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                            n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                             n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                              n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                               n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                 n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                  n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                   n2: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 69648 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                                n0: 0 in 1 place, below massif's threshold (1.00%)
+                               n0: 0 in 1 place, below massif's threshold (1.00%)
+                              n0: 0 in 1 place, below massif's threshold (1.00%)
+                             n0: 0 in 1 place, below massif's threshold (1.00%)
+                            n0: 0 in 1 place, below massif's threshold (1.00%)
+                           n0: 0 in 1 place, below massif's threshold (1.00%)
+                          n0: 0 in 1 place, below massif's threshold (1.00%)
+                         n0: 0 in 1 place, below massif's threshold (1.00%)
+                        n0: 0 in 1 place, below massif's threshold (1.00%)
+                       n0: 0 in 1 place, below massif's threshold (1.00%)
+                      n0: 0 in 1 place, below massif's threshold (1.00%)
+                     n0: 0 in 1 place, below massif's threshold (1.00%)
+                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                n0: 0 in 1 place, below massif's threshold (1.00%)
+               n0: 0 in 1 place, below massif's threshold (1.00%)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n0: 1171 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=4895093
+mem_heap_B=161251
+mem_heap_extra_B=14469
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=5107179
+mem_heap_B=182371
+mem_heap_extra_B=17989
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=5263347
+mem_heap_B=197683
+mem_heap_extra_B=20541
+mem_stacks_B=0
+heap_tree=detailed
+n3: 197683 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 122784 0x109A85: allocate (new_allocator.h:151)
+  n1: 122784 0x109A85: allocate (alloc_traits.h:482)
+   n1: 122784 0x109A85: _M_get_node (stl_tree.h:563)
+    n1: 122784 0x109A85: _M_create_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:613)
+     n1: 122784 0x109A85: _Auto_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:1637)
+      n1: 122784 0x109A85: std::_Rb_tree_iterator<std::pair<int const, long long> > std::_Rb_tree<int, std::pair<int const, long long>, std::_Select1st<std::pair<int const, long long> >, std::less<int>, std::allocator<std::pair<int const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<int const, long long> >, std::piecewise_construct_t const&, std::tuple<int const&>&&, std::tuple<>&&) [clone .isra.0] (stl_tree.h:2462)
+       n1: 122784 0x109FA3: operator[] (stl_map.h:513)
+        n2: 122784 0x109FA3: memoized_factorial(int) (deeprcpp.cpp:36)
+         n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+          n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+           n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+            n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+             n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+              n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+               n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                 n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                  n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                   n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                    n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                     n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                      n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                       n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                        n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                         n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                          n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                           n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                            n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                             n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                              n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                               n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                 n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                  n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                   n2: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 122784 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                                n0: 0 in 1 place, below massif's threshold (1.00%)
+                               n0: 0 in 1 place, below massif's threshold (1.00%)
+                              n0: 0 in 1 place, below massif's threshold (1.00%)
+                             n0: 0 in 1 place, below massif's threshold (1.00%)
+                            n0: 0 in 1 place, below massif's threshold (1.00%)
+                           n0: 0 in 1 place, below massif's threshold (1.00%)
+                          n0: 0 in 1 place, below massif's threshold (1.00%)
+                         n0: 0 in 1 place, below massif's threshold (1.00%)
+                        n0: 0 in 1 place, below massif's threshold (1.00%)
+                       n0: 0 in 1 place, below massif's threshold (1.00%)
+                      n0: 0 in 1 place, below massif's threshold (1.00%)
+                     n0: 0 in 1 place, below massif's threshold (1.00%)
+                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                n0: 0 in 1 place, below massif's threshold (1.00%)
+               n0: 0 in 1 place, below massif's threshold (1.00%)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 1171 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=5533438
+mem_heap_B=224083
+mem_heap_extra_B=24941
+mem_stacks_B=0
+heap_tree=detailed
+n3: 224083 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 149184 0x109A85: allocate (new_allocator.h:151)
+  n1: 149184 0x109A85: allocate (alloc_traits.h:482)
+   n1: 149184 0x109A85: _M_get_node (stl_tree.h:563)
+    n1: 149184 0x109A85: _M_create_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:613)
+     n1: 149184 0x109A85: _Auto_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:1637)
+      n1: 149184 0x109A85: std::_Rb_tree_iterator<std::pair<int const, long long> > std::_Rb_tree<int, std::pair<int const, long long>, std::_Select1st<std::pair<int const, long long> >, std::less<int>, std::allocator<std::pair<int const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<int const, long long> >, std::piecewise_construct_t const&, std::tuple<int const&>&&, std::tuple<>&&) [clone .isra.0] (stl_tree.h:2462)
+       n1: 149184 0x109FA3: operator[] (stl_map.h:513)
+        n2: 149184 0x109FA3: memoized_factorial(int) (deeprcpp.cpp:36)
+         n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+          n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+           n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+            n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+             n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+              n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+               n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                 n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                  n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                   n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                    n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                     n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                      n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                       n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                        n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                         n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                          n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                           n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                            n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                             n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                              n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                               n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                 n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                  n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                   n2: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 149184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                                n0: 0 in 1 place, below massif's threshold (1.00%)
+                               n0: 0 in 1 place, below massif's threshold (1.00%)
+                              n0: 0 in 1 place, below massif's threshold (1.00%)
+                             n0: 0 in 1 place, below massif's threshold (1.00%)
+                            n0: 0 in 1 place, below massif's threshold (1.00%)
+                           n0: 0 in 1 place, below massif's threshold (1.00%)
+                          n0: 0 in 1 place, below massif's threshold (1.00%)
+                         n0: 0 in 1 place, below massif's threshold (1.00%)
+                        n0: 0 in 1 place, below massif's threshold (1.00%)
+                       n0: 0 in 1 place, below massif's threshold (1.00%)
+                      n0: 0 in 1 place, below massif's threshold (1.00%)
+                     n0: 0 in 1 place, below massif's threshold (1.00%)
+                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                n0: 0 in 1 place, below massif's threshold (1.00%)
+               n0: 0 in 1 place, below massif's threshold (1.00%)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 1171 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=19
+#-----------
+time=5726934
+mem_heap_B=242515
+mem_heap_extra_B=28013
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=20
+#-----------
+time=5872086
+mem_heap_B=256339
+mem_heap_extra_B=30317
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=21
+#-----------
+time=6065550
+mem_heap_B=274675
+mem_heap_extra_B=33373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=22
+#-----------
+time=6260238
+mem_heap_B=292723
+mem_heap_extra_B=36381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=23
+#-----------
+time=6406334
+mem_heap_B=306259
+mem_heap_extra_B=38637
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=24
+#-----------
+time=6616507
+mem_heap_B=314784
+mem_heap_extra_B=40040
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=25
+#-----------
+time=6906522
+mem_heap_B=82032
+mem_heap_extra_B=1248
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=7127294
+mem_heap_B=74947
+mem_heap_extra_B=85
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=7272560
+mem_heap_B=93619
+mem_heap_extra_B=3197
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=28
+#-----------
+time=7466673
+mem_heap_B=115171
+mem_heap_extra_B=6789
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=7611895
+mem_heap_B=130531
+mem_heap_extra_B=9349
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=7805986
+mem_heap_B=150643
+mem_heap_extra_B=12701
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=8000174
+mem_heap_B=170227
+mem_heap_extra_B=15965
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=8311469
+mem_heap_B=200803
+mem_heap_extra_B=21061
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=8560135
+mem_heap_B=225091
+mem_heap_extra_B=25109
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=8725949
+mem_heap_B=240883
+mem_heap_extra_B=27741
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=8892229
+mem_heap_B=256723
+mem_heap_extra_B=30381
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=9058373
+mem_heap_B=272515
+mem_heap_extra_B=33013
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=9389853
+mem_heap_B=303235
+mem_heap_extra_B=38133
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=9638472
+mem_heap_B=326275
+mem_heap_extra_B=41973
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=9969952
+mem_heap_B=356995
+mem_heap_extra_B=47093
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=40
+#-----------
+time=10301912
+mem_heap_B=387283
+mem_heap_extra_B=52141
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=10633840
+mem_heap_B=417235
+mem_heap_extra_B=57133
+mem_stacks_B=0
+heap_tree=detailed
+n3: 417235 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 342336 0x109A85: allocate (new_allocator.h:151)
+  n1: 342336 0x109A85: allocate (alloc_traits.h:482)
+   n1: 342336 0x109A85: _M_get_node (stl_tree.h:563)
+    n1: 342336 0x109A85: _M_create_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:613)
+     n1: 342336 0x109A85: _Auto_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:1637)
+      n1: 342336 0x109A85: std::_Rb_tree_iterator<std::pair<int const, long long> > std::_Rb_tree<int, std::pair<int const, long long>, std::_Select1st<std::pair<int const, long long> >, std::less<int>, std::allocator<std::pair<int const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<int const, long long> >, std::piecewise_construct_t const&, std::tuple<int const&>&&, std::tuple<>&&) [clone .isra.0] (stl_tree.h:2462)
+       n1: 342336 0x109FA3: operator[] (stl_map.h:513)
+        n2: 342336 0x109FA3: memoized_factorial(int) (deeprcpp.cpp:36)
+         n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+          n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+           n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+            n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+             n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+              n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+               n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                 n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                  n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                   n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                    n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                     n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                      n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                       n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                        n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                         n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                          n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                           n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                            n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                             n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                              n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                               n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                 n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                  n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                   n2: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 342336 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                                n0: 0 in 1 place, below massif's threshold (1.00%)
+                               n0: 0 in 1 place, below massif's threshold (1.00%)
+                              n0: 0 in 1 place, below massif's threshold (1.00%)
+                             n0: 0 in 1 place, below massif's threshold (1.00%)
+                            n0: 0 in 1 place, below massif's threshold (1.00%)
+                           n0: 0 in 1 place, below massif's threshold (1.00%)
+                          n0: 0 in 1 place, below massif's threshold (1.00%)
+                         n0: 0 in 1 place, below massif's threshold (1.00%)
+                        n0: 0 in 1 place, below massif's threshold (1.00%)
+                       n0: 0 in 1 place, below massif's threshold (1.00%)
+                      n0: 0 in 1 place, below massif's threshold (1.00%)
+                     n0: 0 in 1 place, below massif's threshold (1.00%)
+                    n0: 0 in 1 place, below massif's threshold (1.00%)
+                   n0: 0 in 1 place, below massif's threshold (1.00%)
+                  n0: 0 in 1 place, below massif's threshold (1.00%)
+                 n0: 0 in 1 place, below massif's threshold (1.00%)
+                n0: 0 in 1 place, below massif's threshold (1.00%)
+               n0: 0 in 1 place, below massif's threshold (1.00%)
+              n0: 0 in 1 place, below massif's threshold (1.00%)
+             n0: 0 in 1 place, below massif's threshold (1.00%)
+            n0: 0 in 1 place, below massif's threshold (1.00%)
+           n0: 0 in 1 place, below massif's threshold (1.00%)
+          n0: 0 in 1 place, below massif's threshold (1.00%)
+         n0: 0 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 1171 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=42
+#-----------
+time=10799884
+mem_heap_B=432211
+mem_heap_extra_B=59629
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=10965848
+mem_heap_B=447187
+mem_heap_extra_B=62125
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=11297732
+mem_heap_B=476899
+mem_heap_extra_B=67077
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=11546748
+mem_heap_B=498787
+mem_heap_extra_B=70725
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=11795704
+mem_heap_B=520675
+mem_heap_extra_B=74373
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=47
+#-----------
+time=11961628
+mem_heap_B=535267
+mem_heap_extra_B=76805
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=12189182
+mem_heap_B=554851
+mem_heap_extra_B=80069
+mem_stacks_B=0
+heap_tree=peak
+n3: 554851 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 479952 0x109A85: allocate (new_allocator.h:151)
+  n1: 479952 0x109A85: allocate (alloc_traits.h:482)
+   n1: 479952 0x109A85: _M_get_node (stl_tree.h:563)
+    n1: 479952 0x109A85: _M_create_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:613)
+     n1: 479952 0x109A85: _Auto_node<const std::piecewise_construct_t&, std::tuple<int const&>, std::tuple<> > (stl_tree.h:1637)
+      n1: 479952 0x109A85: std::_Rb_tree_iterator<std::pair<int const, long long> > std::_Rb_tree<int, std::pair<int const, long long>, std::_Select1st<std::pair<int const, long long> >, std::less<int>, std::allocator<std::pair<int const, long long> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<int const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<int const, long long> >, std::piecewise_construct_t const&, std::tuple<int const&>&&, std::tuple<>&&) [clone .isra.0] (stl_tree.h:2462)
+       n1: 479952 0x109FA3: operator[] (stl_map.h:513)
+        n2: 479952 0x109FA3: memoized_factorial(int) (deeprcpp.cpp:36)
+         n2: 479904 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+          n2: 479856 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+           n2: 479808 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+            n2: 479760 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+             n2: 479712 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+              n2: 479664 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+               n2: 479616 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                n2: 479568 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                 n2: 479520 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                  n2: 479472 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                   n2: 479424 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                    n2: 479376 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                     n2: 479328 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                      n2: 479280 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                       n2: 479232 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                        n2: 479184 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                         n2: 479136 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                          n2: 479088 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                           n2: 479040 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                            n2: 478992 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                             n2: 478944 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                              n2: 478896 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                               n2: 478848 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                n2: 478800 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                 n2: 478752 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                  n2: 478704 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                   n2: 478656 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 478608 0x109E97: memoized_factorial(int) (deeprcpp.cpp:36)
+                                    n0: 48 in 1 place, below massif's threshold (1.00%)
+                                   n0: 48 in 1 place, below massif's threshold (1.00%)
+                                  n0: 48 in 1 place, below massif's threshold (1.00%)
+                                 n0: 48 in 1 place, below massif's threshold (1.00%)
+                                n0: 48 in 1 place, below massif's threshold (1.00%)
+                               n0: 48 in 1 place, below massif's threshold (1.00%)
+                              n0: 48 in 1 place, below massif's threshold (1.00%)
+                             n0: 48 in 1 place, below massif's threshold (1.00%)
+                            n0: 48 in 1 place, below massif's threshold (1.00%)
+                           n0: 48 in 1 place, below massif's threshold (1.00%)
+                          n0: 48 in 1 place, below massif's threshold (1.00%)
+                         n0: 48 in 1 place, below massif's threshold (1.00%)
+                        n0: 48 in 1 place, below massif's threshold (1.00%)
+                       n0: 48 in 1 place, below massif's threshold (1.00%)
+                      n0: 48 in 1 place, below massif's threshold (1.00%)
+                     n0: 48 in 1 place, below massif's threshold (1.00%)
+                    n0: 48 in 1 place, below massif's threshold (1.00%)
+                   n0: 48 in 1 place, below massif's threshold (1.00%)
+                  n0: 48 in 1 place, below massif's threshold (1.00%)
+                 n0: 48 in 1 place, below massif's threshold (1.00%)
+                n0: 48 in 1 place, below massif's threshold (1.00%)
+               n0: 48 in 1 place, below massif's threshold (1.00%)
+              n0: 48 in 1 place, below massif's threshold (1.00%)
+             n0: 48 in 1 place, below massif's threshold (1.00%)
+            n0: 48 in 1 place, below massif's threshold (1.00%)
+           n0: 48 in 1 place, below massif's threshold (1.00%)
+          n0: 48 in 1 place, below massif's threshold (1.00%)
+         n0: 48 in 1 place, below massif's threshold (1.00%)
+ n1: 73728 0x490E38E: ??? (in /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.33)
+  n1: 73728 0x400571E: call_init.part.0 (dl-init.c:74)
+   n1: 73728 0x4005823: call_init (dl-init.c:120)
+    n1: 73728 0x4005823: _dl_init (dl-init.c:121)
+     n0: 73728 0x401F59F: ??? (in /usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2)
+ n0: 1171 in 5 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=49
+#-----------
+time=12271906
+mem_heap_B=490632
+mem_heap_extra_B=69336
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=50
+#-----------
+time=12417072
+mem_heap_B=378552
+mem_heap_extra_B=50656
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=12562244
+mem_heap_B=262392
+mem_heap_extra_B=31296
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=12707434
+mem_heap_B=143544
+mem_heap_extra_B=11488
+mem_stacks_B=0
+heap_tree=empty
