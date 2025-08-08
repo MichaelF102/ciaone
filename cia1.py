@@ -37,7 +37,7 @@ if section == "General":
     st.markdown("""
     <p style='font-size:18px'>
         <span style='font-weight:bold; font-size:22px;'>Name: Michael Fernandes</span><br>
-        <strong>UID:</strong> 2059006<br>
+        <strong>UID:</strong> 2509006<br>
         <strong>Roll No:</strong> 06<br>
         <strong>Title:</strong> Benchmarking Python, C, C++,Go and Java on Numerical Workloads<br>
         <span style='font-weight:bold; font-size:22px;'>Tasks:</span><br>
@@ -3719,6 +3719,7 @@ if section == "Conclusion":
 st.markdown(section_content[section] if section_content[section] else "")
 
 st.sidebar.write("Developed by Michael Fernandes")
+
 
 
 
