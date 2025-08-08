@@ -49,9 +49,9 @@ if section == "General":
         <strong>Profilers Used:</strong> cPython, VirtualVM, Valgrind, gprof,pprof
     </p>
     """, unsafe_allow_html=True)
-    st.image("Images/gonb3.png", 
+    st.image("Images/diffimg.png", 
              caption="Languages Benchmarked", 
-             use_column_width=True)
+             use_container_width=True)
 
 if section == "Introduction":
     st.markdown("""
@@ -2707,88 +2707,88 @@ if section == "Results":
     if st.session_state.show_java:
         st.subheader("Java Profiler Output")
         st.markdown("1.Fibonacci + Odd Numbers (1M)")
-        st.image("Images\javaop.png", caption="Odd + Fibonacci-1M", use_column_width=True)
+        st.image("Images/javaop.png", caption="Odd + Fibonacci-1M", use_column_width=True)
         st.markdown("2.N-Body Simulation")
-        st.image("Images\javanbody.png", caption="N-Body Simulation", use_column_width=True)
+        st.image("Images/javanbody.png", caption="N-Body Simulation", use_column_width=True)
         st.markdown("3.Deep Recursion")
-        st.image("Images\javadeep.png", caption="Deep Recursion", use_column_width=True)
+        st.image("Images/javadeep.png", caption="Deep Recursion", use_column_width=True)
 
 
     if st.session_state.show_python:
         st.subheader("Python Profiler Output")
         st.markdown("1.Fibonacci + Odd Numbers (1M)")
-        st.image("Images\pyfib.png", caption="Odd + Fibonacci-1M", use_column_width=True)
+        st.image("Images/pyfib.png", caption="Odd + Fibonacci-1M", use_column_width=True)
         st.markdown("2.N-Body Simulation")
-        st.image("Images\pynb1.png", use_column_width=True)
-        st.image("Images\pynb2.png", use_column_width=True)
-        st.image("Images\pynb3.png", caption="N-Body Simulation", use_column_width=True)
+        st.image("Images/pynb1.png", use_column_width=True)
+        st.image("Images/pynb2.png", use_column_width=True)
+        st.image("Images/pynb3.png", caption="N-Body Simulation", use_column_width=True)
         st.markdown("3.Deep Recursion")
-        st.image("Images\pydeep1.png", use_column_width=True)
-        st.image("Images\pydeep2.png", caption="Deep Recursion", use_column_width=True)
+        st.image("Images/pydeep1.png", use_column_width=True)
+        st.image("Images/pydeep2.png", caption="Deep Recursion", use_column_width=True)
         
     if st.session_state.show_c:
         st.subheader("C Profiler Output")
         st.markdown("1.Fibonacci + Odd Numbers (1M)")
-        st.image("Images\cfib1.png", use_column_width=True)
-        st.image("Images\cfib2.png", use_column_width=True)
-        st.image("Images\cfib3.png", use_column_width=True)
-        st.image("Images\cfib4.png", use_column_width=True)
-        st.image("Images\cfib5.png", use_column_width=True)
-        st.image("Images\cfib6.png", use_column_width=True)
-        st.image("Images\cfib7.png", use_column_width=True)
-        st.image("Images\cfib8.png", use_column_width=True)
+        st.image("Images/cfib1.png", use_column_width=True)
+        st.image("Images/cfib2.png", use_column_width=True)
+        st.image("Images/cfib3.png", use_column_width=True)
+        st.image("Images/cfib4.png", use_column_width=True)
+        st.image("Images/cfib5.png", use_column_width=True)
+        st.image("Images/cfib6.png", use_column_width=True)
+        st.image("Images/cfib7.png", use_column_width=True)
+        st.image("Images/cfib8.png", use_column_width=True)
         st.markdown("2.N-Body Simulation")
-        st.image("Images\cnb1.png", use_column_width=True)
-        st.image("Images\cnb2.png", use_column_width=True)
-        st.image("Images\cnb3.png", use_column_width=True)
-        st.image("Images\cnb4.png", use_column_width=True)
-        st.image("Images\cnb5.png", use_column_width=True)
-        st.image("Images\cnb6.png", use_column_width=True)
+        st.image("Images/cnb1.png", use_column_width=True)
+        st.image("Images/cnb2.png", use_column_width=True)
+        st.image("Images/cnb3.png", use_column_width=True)
+        st.image("Images/cnb4.png", use_column_width=True)
+        st.image("Images/cnb5.png", use_column_width=True)
+        st.image("Images/cnb6.png", use_column_width=True)
         st.markdown("3.Deep Recursion")
-        st.image("Images\cr1.png", use_column_width=True)
-        st.image("Images\cr2.png", use_column_width=True)
-        st.image("Images\cr3.png", use_column_width=True)
-        st.image("Images\cr4.png", use_column_width=True)
-        st.image("Images\cr5.png", use_column_width=True)
-        st.image("Images\cr6.png", use_column_width=True)
-        st.image("Images\cr7.png", use_column_width=True)
-        st.image("Images\cr8.png", use_column_width=True)
+        st.image("Images/cr1.png", use_column_width=True)
+        st.image("Images/cr2.png", use_column_width=True)
+        st.image("Images/cr3.png", use_column_width=True)
+        st.image("Images/cr4.png", use_column_width=True)
+        st.image("Images/cr5.png", use_column_width=True)
+        st.image("Images/cr6.png", use_column_width=True)
+        st.image("Images/cr7.png", use_column_width=True)
+        st.image("Images/cr8.png", use_column_width=True)
 
     if st.session_state.show_cpp:
         st.subheader("C++ Profiler Output")
         st.markdown("1.Fibonacci + Odd Numbers (1M)")
-        st.image("Images\cppfib1.png", use_column_width=True)
-        st.image("Images\cppfib2.png", use_column_width=True)
-        st.image("Images\cppfib3.png", use_column_width=True)
-        st.image("Images\cppfib4.png", use_column_width=True)
+        st.image("Images/cppfib1.png", use_column_width=True)
+        st.image("Images/cppfib2.png", use_column_width=True)
+        st.image("Images/cppfib3.png", use_column_width=True)
+        st.image("Images/cppfib4.png", use_column_width=True)
         st.markdown("2.N-Body Simulation")
-        st.image("Images\cppnb1.png", use_column_width=True)
-        st.image("Images\cppnb2.png", use_column_width=True)
-        st.image("Images\cppnb3.png", use_column_width=True)
-        st.image("Images\cppnb4.png", use_column_width=True)
+        st.image("Images/cppnb1.png", use_column_width=True)
+        st.image("Images/cppnb2.png", use_column_width=True)
+        st.image("Images/cppnb3.png", use_column_width=True)
+        st.image("Images/cppnb4.png", use_column_width=True)
         st.markdown("3.Deep Recursion")
-        st.image("Images\cppr1.png", use_column_width=True)
-        st.image("Images\cppr2.png", use_column_width=True)
-        st.image("Images\cppr3.png", use_column_width=True)
-        st.image("Images\cppr4.png", use_column_width=True)
+        st.image("Images/cppr1.png", use_column_width=True)
+        st.image("Images/cppr2.png", use_column_width=True)
+        st.image("Images/cppr3.png", use_column_width=True)
+        st.image("Images/cppr4.png", use_column_width=True)
 
     if st.session_state.show_go:
         st.subheader("Go Profiler Output")
         st.markdown("1.Fibonacci + Odd Numbers (1M)")
-        st.image("Images\gofib1.png", use_column_width=True)
-        st.image("Images\gofib2.png",  use_column_width=True)
-        st.image("Images\gofib3.png",  use_column_width=True)
-        st.image("Images\gofib4.png",  use_column_width=True)
-        st.image("Images\gofib5.png",  use_column_width=True)
-        st.image("Images\gofib6.png",  use_column_width=True)
+        st.image("Images/gofib1.png", use_column_width=True)
+        st.image("Images/gofib2.png",  use_column_width=True)
+        st.image("Images/gofib3.png",  use_column_width=True)
+        st.image("Images/gofib4.png",  use_column_width=True)
+        st.image("Images/gofib5.png",  use_column_width=True)
+        st.image("Images/gofib6.png",  use_column_width=True)
         st.markdown("2.N-Body Simulation")
-        st.image("Images\gonb1.png",  use_column_width=True)
-        st.image("Images\gonb2.png",  use_column_width=True)
-        st.image("Images\gonb3.png",  use_column_width=True)
+        st.image("Images/gonb1.png",  use_column_width=True)
+        st.image("Images/gonb2.png",  use_column_width=True)
+        st.image("Images/gonb3.png",  use_column_width=True)
         st.markdown("3.Deep Recursion")
-        st.image("Images\godeep1.png",  use_column_width=True)
-        st.image("Images\godeep2.png",  use_column_width=True)
-        st.image("Images\godeep3.png",  use_column_width=True)
+        st.image("Images/godeep1.png",  use_column_width=True)
+        st.image("Images/godeep2.png",  use_column_width=True)
+        st.image("Images/godeep3.png",  use_column_width=True)
 
 
 if section == "Comparative Analysis":
@@ -3713,12 +3713,13 @@ if section == "Conclusion":
       </table>
     </div><br><br>
     """, unsafe_allow_html=True)
-    st.image(r"Images\result4.png", 
+    st.image(r"Images/result4.png", 
              caption="Results Summary", 
              use_column_width=True)
 
 st.markdown(section_content[section] if section_content[section] else "")
 
 st.sidebar.write("Developed by Michael Fernandes")
+
 
 
