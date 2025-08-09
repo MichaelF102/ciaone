@@ -46,7 +46,7 @@ if section == "General":
         3. Compute Deep Recursion <br>
         <strong>Languages Used:</strong> Python, C, C++, Java,Go <br>
         <strong>Goal:</strong> Compare execution speed, memory behavior, stability under load, debugging and development effort<br>
-        <strong>Profilers Used:</strong> cPython, VirtualVM, Valgrind, gprof,pprof
+        <strong>Profilers Used:</strong> cProfile, VirtualVM, Valgrind, gprof,pprof
     </p>
     """, unsafe_allow_html=True)
     st.image("Images/diffimg.jpg", caption="Languages Benchmarked", use_container_width=True)
@@ -3719,6 +3719,7 @@ if section == "Conclusion":
 st.markdown(section_content[section] if section_content[section] else "")
 
 st.sidebar.write("Developed by Michael Fernandes")
+
 
 
 
